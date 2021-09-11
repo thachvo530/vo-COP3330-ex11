@@ -14,15 +14,16 @@ public class App
 {
     public static void main( String[] args ) {
 
+        Scanner scan = new Scanner(System.in);
+
         System.out.print("How many euros are you exchanging? ");
-        Scanner euros = new Scanner(System.in);
-        int euros1 = euros.nextInt();
+        int euros1 = scan.nextInt();
 
         System.out.print("What is the exchange rate? ");
-        Scanner rate = new Scanner(System.in);
-        double rate1 = rate.nextDouble();
+        double rate1 = scan.nextDouble();
 
         double usdollars = euros1 * rate1;
+
         DecimalFormat df = new DecimalFormat(".00");
 
 
